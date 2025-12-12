@@ -1,0 +1,117 @@
+image: kicad/kicad:9.0-full
+
+variables:
+  HARDWARE_DIR: "$CI_PROJECT_DIR/Hardware/"
+  PCB_LAYERS: "F.Cu,In1.Cu,In2.Cu,B.Cu,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts"
+  KICAD9_3DMODEL_DIR: "/usr/share/kicad/3dmodels"
+  KICAD8_3DMODEL_DIR: "/usr/share/kicad/3dmodels"
+
+stages:
+  - drc
+  - export
+
+drc:
+  stage: drc
+  script:
+    - echo "Starte DRC für PCB-Datei..."
+    - if ls "$HARDWARE_DIR"/*.kicad_pcb >/dev/null 2>&1; then kicad-cli pcb drc --severity-error --exit-code-violations "$HARDWARE_DIR"/*.kicad_pcb; else echo "No .kicad_pcb file found"; exit 1; fi
+    - echo "DRC successful!"
+    - echo ""
+  rules:
+    - changes:
+        - Production/*.zip
+
+export:
+  stage: export
+  needs:
+    - drc
+  before_script:
+    - sudo apt-get update && sudo apt-get install -y poppler-utils
+  script:
+    - git config --global --add safe.directory "$CI_PROJECT_DIR"
+    - git config --global user.name "GitLab CI"
+    - git config --global user.email "ci@mygit.th-deg.de"
+    - echo "Starting PDF export for PCB layers..."
+    - mkdir -p Docs/temp
+    - |
+      if ls "$HARDWARE_DIR"/*.kicad_pcb >/dev/null 2>&1; then
+        PCB_FILE=$(ls "$HARDWARE_DIR"/*.kicad_pcb | head -n1)
+        PROJECT_NAME=$(basename "$PCB_FILE" .kicad_pcb)
+        declare -a LAYERS=("F.Cu" "In1.Cu" "In2.Cu" "B.Cu" "F.SilkS" "B.SilkS" "F.Mask" "B.Mask" "Edge.Cuts")
+        declare -a EXPORT_PDFS=()
+        for layer in "${LAYERS[@]}"; do
+          if grep -q "$layer" "$PCB_FILE"; then
+            OUT_FILE="Docs/temp/board_${layer//./_}.pdf"
+            echo "Exporting layer: $layer"
+            kicad-cli pcb export pdf --output "$OUT_FILE" --layers "$layer" "$PCB_FILE"
+            EXPORT_PDFS+=("$OUT_FILE")
+          else
+            echo "Layer $layer not exists – skipping."
+          fi
+        done
+        if [ ${#EXPORT_PDFS[@]} -gt 0 ]; then
+          echo "Combining PDF files..."
+          pdfunite "${EXPORT_PDFS[@]}" "Docs/Project_board_layers.pdf"
+        else
+          echo "No layers found to combine. Export aborted."
+          exit 1
+        fi
+      else
+        echo "No .kicad_pcb file found"
+        exit 1
+      fi
+    - echo "PCB layer export successful."
+    - echo ""
+    - echo "Exporting schematics..."
+    - mkdir -p Docs/temp_sch
+    - |
+      if ls "$HARDWARE_DIR"/*.kicad_pcb >/dev/null 2>&1; then
+        sch_file="${HARDWARE_DIR}/${PROJECT_NAME}.kicad_sch"
+        if [ -f "$sch_file" ]; then
+          kicad-cli sch export pdf --output "Docs/Project_schematics.pdf" "$sch_file" || echo "Export of $sch_file failed."
+        else
+          echo "No matching .kicad_sch file found"
+        fi
+      else
+        echo "No .kicad_pcb file found"
+      fi
+    - rm -rf Docs/temp Docs/temp_sch
+    - echo "Schematic export successful."
+    - echo ""
+    - echo "Starting rendering process for PCB preview..."
+    - |
+      if ls "$HARDWARE_DIR"/*.kicad_pcb >/dev/null 2>&1; then
+        PCB_FILE=$(ls "$HARDWARE_DIR"/*.kicad_pcb | head -n1);
+        TIMESTAMP=$(date +%Y-%m-%d)
+        SHORT_HASH=$(git rev-parse --short HEAD || echo "nogit")
+        PREVIEW_FILE_TOP="Docs/board_preview_top_${TIMESTAMP}_${SHORT_HASH}.png"
+        PREVIEW_FILE_BOTTOM="Docs/board_preview_bottom_${TIMESTAMP}_${SHORT_HASH}.png"
+        
+        echo "Rendering PCB top side..."
+        kicad-cli pcb render --output "$PREVIEW_FILE_TOP" --width 1920 --height 1080 --side top --background transparent --quality high "$PCB_FILE"
+        echo "Rendering top side successful."
+        echo ""
+
+        echo "Rendering PCB bottom side..."
+        kicad-cli pcb render --output "$PREVIEW_FILE_BOTTOM" --width 1920 --height 1080 --side bottom --background transparent --quality high "$PCB_FILE"
+        echo "Rendering bottom side successful."
+        echo ""
+
+        echo "Inserting preview images into README.md..."
+        if [ -f README.md ]; then
+            sed -i "/<!-- Keep this line! Rendered picture of PCB will be displayed after production files are pushed to branch -->/a ![]($PREVIEW_FILE_BOTTOM)" README.md
+            sed -i "/<!-- Keep this line! Rendered picture of PCB will be displayed after production files are pushed to branch -->/a ![]($PREVIEW_FILE_TOP)" README.md
+        fi
+      else
+        echo "No .kicad_pcb file found";
+        exit 1;
+      fi
+    - echo "Rendering process successful."
+    - echo ""
+    - echo "Commit and Push the updated preview image..."
+    - git add Docs/Project_board_layers.pdf Docs/Project_schematics.pdf Docs/board_preview_top_${TIMESTAMP}_${SHORT_HASH}.png Docs/board_preview_bottom_${TIMESTAMP}_${SHORT_HASH}.png ./README.md || true
+    - git commit -m "Update PCB preview image and PDFs" || true
+    - git push "https://oauth2:${MYGIT_DOCKER_ACCESS_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:${CI_COMMIT_REF_NAME}
+  rules:
+    - changes:
+        - Production/*.zip

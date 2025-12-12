@@ -1,0 +1,1454 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e5bf485d-d6ad-4550-96e9-62736fd09188")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:LED_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 156.21 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "019f70c0-7576-43e8-a0a0-3e173fa3cf89")
+	)
+	(junction
+		(at 142.24 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08171a58-a355-4ac8-be8d-cfe016ed4162")
+	)
+	(junction
+		(at 170.18 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65e1f46f-f2ea-4668-ab3f-141635d20fd2")
+	)
+	(junction
+		(at 114.3 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70d232cb-22d0-41a0-8cb6-4ec2efd2733d")
+	)
+	(junction
+		(at 142.24 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81a8ffdb-16d1-4a6b-bffc-f402b4051b2d")
+	)
+	(junction
+		(at 156.21 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9178322a-c714-4292-883d-636ac95d5ce8")
+	)
+	(junction
+		(at 114.3 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ae29685-d918-4171-9228-17876dcf8eac")
+	)
+	(junction
+		(at 128.27 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a14b6194-5cd9-4d40-b8e9-b2486c893b51")
+	)
+	(junction
+		(at 100.33 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aed9fba9-9e7e-4235-aa92-c628611c757a")
+	)
+	(junction
+		(at 100.33 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9340b2d-0759-4169-93f6-a9660ded93b5")
+	)
+	(junction
+		(at 86.36 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd6b0263-7692-4c79-9dab-290a5ddf1c90")
+	)
+	(junction
+		(at 170.18 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e968d3aa-fe06-46c5-8d4e-68179caf1ee5")
+	)
+	(junction
+		(at 128.27 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebbc6d19-feff-4372-b2e3-9ba401b2ac54")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 142.24 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "011110f2-7463-4abb-89b4-d7e58866a2de")
+	)
+	(wire
+		(pts
+			(xy 142.24 86.36) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db9663a-e2a5-410f-964e-1128c1956aac")
+	)
+	(wire
+		(pts
+			(xy 114.3 86.36) (xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ef89191-9252-4885-87c6-3f2fce8075e3")
+	)
+	(wire
+		(pts
+			(xy 128.27 81.28) (xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29d79d04-2e11-4c40-9c7d-f4c3f6491e6e")
+	)
+	(wire
+		(pts
+			(xy 100.33 86.36) (xy 100.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a68ccd1-3a43-45b4-af7b-5ea3c9561ba2")
+	)
+	(wire
+		(pts
+			(xy 86.36 91.44) (xy 86.36 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac7ad82-f5a4-44a5-bd35-209d59e141d5")
+	)
+	(wire
+		(pts
+			(xy 81.28 81.28) (xy 86.36 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cc501de-2029-4ea2-96fc-4204510913c0")
+	)
+	(wire
+		(pts
+			(xy 156.21 81.28) (xy 156.21 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a89155d-ec85-4452-8cd2-9cc9bc06a164")
+	)
+	(wire
+		(pts
+			(xy 156.21 91.44) (xy 156.21 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad6b285-f401-484c-afde-676db8da997e")
+	)
+	(wire
+		(pts
+			(xy 156.21 95.25) (xy 170.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "556bcafd-93da-44e7-a5c2-5c4b6dae3f71")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 128.27 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "597dce67-95a5-474e-acb3-66d6d3a9cafd")
+	)
+	(wire
+		(pts
+			(xy 114.3 81.28) (xy 100.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5accde76-91eb-4e7b-8c44-9e75025498a6")
+	)
+	(wire
+		(pts
+			(xy 100.33 91.44) (xy 100.33 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d8d6aa5-a33c-49f3-854a-e60509e3a5b0")
+	)
+	(wire
+		(pts
+			(xy 184.15 91.44) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f5f50cd-1cf9-4096-8ab6-b13788049aa6")
+	)
+	(wire
+		(pts
+			(xy 114.3 95.25) (xy 128.27 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a3fe693-3f2f-482f-9dfa-172d1af7bdfe")
+	)
+	(wire
+		(pts
+			(xy 86.36 81.28) (xy 86.36 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a4000f6-28f8-4bf4-a8f9-4f66faff03f3")
+	)
+	(wire
+		(pts
+			(xy 128.27 86.36) (xy 128.27 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926de088-2e52-4ede-9625-124e2c166d6b")
+	)
+	(wire
+		(pts
+			(xy 114.3 91.44) (xy 114.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "990cdac0-0845-4bad-ba32-21517090bb90")
+	)
+	(wire
+		(pts
+			(xy 170.18 95.25) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a22bfd19-557d-4a50-84c1-b95a3efd7f04")
+	)
+	(wire
+		(pts
+			(xy 142.24 97.79) (xy 142.24 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34f83c0-8042-4a76-a445-ea7ae6e19b11")
+	)
+	(wire
+		(pts
+			(xy 100.33 95.25) (xy 114.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5fb228a-1568-4687-bb0f-4b3ef9b684e9")
+	)
+	(wire
+		(pts
+			(xy 86.36 95.25) (xy 100.33 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbb1de64-a878-4d2a-bda8-1eeaa71c647f")
+	)
+	(wire
+		(pts
+			(xy 170.18 81.28) (xy 156.21 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d479c561-d1f8-4c1b-a5a1-e1fd001d3bb1")
+	)
+	(wire
+		(pts
+			(xy 156.21 81.28) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da2f5642-0aa0-4671-b4bc-a1cc0033e01f")
+	)
+	(wire
+		(pts
+			(xy 100.33 81.28) (xy 86.36 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2671a9b-7ea3-4ff1-84bb-8b70a54b146e")
+	)
+	(wire
+		(pts
+			(xy 128.27 91.44) (xy 128.27 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7272994-fa0f-4fb5-8a57-3d8a9d5e4bfc")
+	)
+	(wire
+		(pts
+			(xy 142.24 95.25) (xy 156.21 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed132d38-9c07-4760-b66c-0811a0e2c99b")
+	)
+	(wire
+		(pts
+			(xy 170.18 91.44) (xy 170.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7d2433-9004-4ff3-bbb4-5e71d97af74a")
+	)
+	(wire
+		(pts
+			(xy 128.27 95.25) (xy 142.24 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efdd2ae6-cc91-47fd-bd2d-36509ac7fe7f")
+	)
+	(wire
+		(pts
+			(xy 184.15 81.28) (xy 170.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d8c07f-b9bc-48a0-b785-bc14f1d940dc")
+	)
+	(wire
+		(pts
+			(xy 184.15 81.28) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9aff42d-f38b-4df8-9f8f-e8a700cb5d4c")
+	)
+	(wire
+		(pts
+			(xy 170.18 81.28) (xy 170.18 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d5de76-e887-4c05-b619-84929e8e0781")
+	)
+	(hierarchical_label "LED_BLUE"
+		(shape input)
+		(at 81.28 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "75cd85bd-2f63-4b10-8845-dcc1b52c6430")
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 156.21 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "01b36d81-17e5-410d-b795-92b7b038b44f")
+		(property "Reference" "D22"
+			(at 153.67 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 153.67 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 156.21 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 156.21 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 156.21 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "514e80ba-e250-4ea9-a97a-4249c13f1b07")
+		)
+		(pin "1"
+			(uuid "e22b09b4-6eaa-464a-b606-cd3d1e078317")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 100.33 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09275ec0-2758-488b-82ae-593c07c35d4a")
+		(property "Reference" "D18"
+			(at 97.79 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 97.79 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 100.33 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 100.33 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 100.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a5c46d5-1a19-4881-8814-8c12ff7e4d72")
+		)
+		(pin "1"
+			(uuid "429bacb6-7066-41f8-962f-f971ab60d668")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 86.36 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2048e865-4481-49c9-b2f6-b0532622d9c9")
+		(property "Reference" "D17"
+			(at 83.82 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 83.82 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 86.36 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 86.36 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 86.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 86.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 86.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "39ab7c4d-2eb3-48c3-80fd-1aa7d98c0e10")
+		)
+		(pin "1"
+			(uuid "e7678e02-a0a0-46e2-a058-40d3e734dce5")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 128.27 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30fbac4e-c1d8-4387-bc81-19247c1fae16")
+		(property "Reference" "D20"
+			(at 125.73 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 125.73 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 128.27 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 128.27 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 128.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 128.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 128.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bf08ef6-2eef-48da-af63-a8be77b57933")
+		)
+		(pin "1"
+			(uuid "456c600b-755d-44d9-ae91-97c392a34e76")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 114.3 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59cc5ab9-a60f-456c-ada4-b911d13d5bdd")
+		(property "Reference" "D19"
+			(at 111.76 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 111.76 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 114.3 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 114.3 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ae55f4f-e5de-4d6f-9540-51fc0b5669e8")
+		)
+		(pin "1"
+			(uuid "24833f00-dac8-435f-a9bb-72aa548bbe72")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 142.24 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f154c91-a8b5-40a6-8389-ef87709606fb")
+		(property "Reference" "D21"
+			(at 139.7 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 139.7 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 142.24 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 142.24 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "788e1cc7-5616-4a9c-bc1e-c2355dcbc2eb")
+		)
+		(pin "1"
+			(uuid "7cddc6f2-c92d-49c0-805d-723f862754b5")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 184.15 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ccaa665-c5ee-4aa6-97f5-8274980fd5b1")
+		(property "Reference" "D24"
+			(at 181.61 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 181.61 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 184.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 184.15 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 184.15 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7258143b-5285-4714-a694-08d2e3c9cc3e")
+		)
+		(pin "1"
+			(uuid "5ecfb4b9-3eee-42c0-af1b-bcb42232e690")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a32ba4e3-839c-415f-893b-06ecdbbd11ea")
+		(property "Reference" "#PWR10"
+			(at 142.24 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "691c8aa4-6e7c-4d1e-bf6e-f0fae438f28e")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "#PWR10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 170.18 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e634341f-66ff-40ab-88c0-206abb0dc67c")
+		(property "Reference" "D23"
+			(at 167.64 90.1066 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 167.64 87.5666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 170.18 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS20-2002-455/LTL1CHTBK5.pdf"
+			(at 170.18 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 170.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MNR" "859-LTL1CHTBK5 "
+			(at 170.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2895474"
+			(at 170.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62ab27a4-fd17-48ab-b185-7e11c11325cb")
+		)
+		(pin "1"
+			(uuid "63d7a9d1-d43d-4891-9fa8-4d45baa47d0f")
+		)
+		(instances
+			(project "Project"
+				(path "/9d5b0cb7-3f9f-4216-9329-ed15d36fd594/804cfc2f-f185-4fa6-8d56-9bae4af816da"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
