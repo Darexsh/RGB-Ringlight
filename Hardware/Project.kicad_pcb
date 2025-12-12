@@ -438,15 +438,15 @@
 			(pintype "passive")
 			(uuid "ca6663d7-059e-407a-8751-835d03df7841")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -726,15 +726,15 @@
 			(pintype "passive")
 			(uuid "872f36e8-b479-4776-9299-b0e84e3fd93e")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -1014,15 +1014,15 @@
 			(pintype "passive")
 			(uuid "f530e1b8-f218-4535-9fd5-eed82b65036b")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -1947,15 +1947,15 @@
 			(pintype "passive")
 			(uuid "ea018c2f-6114-44ef-96e0-055a9e4ce333")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -2235,15 +2235,15 @@
 			(pintype "passive")
 			(uuid "33b49579-0b77-4d14-af5f-55ce2cc98d65")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -3168,15 +3168,15 @@
 			(pintype "passive")
 			(uuid "2de2528f-bf04-49fd-88c3-ab6459d78df3")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -4101,15 +4101,15 @@
 			(pintype "passive")
 			(uuid "aebe73f6-61f2-4b37-b463-9ec0ac8c8c0c")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -5252,15 +5252,15 @@
 			(pintype "passive")
 			(uuid "8d77edca-47a2-4a7f-93bb-504d009352f0")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -5540,15 +5540,15 @@
 			(pintype "passive")
 			(uuid "323f3904-7944-4271-bb27-c89be014eb7a")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -5828,15 +5828,15 @@
 			(pintype "passive")
 			(uuid "40ea4549-824a-4986-9cc0-5a219528bd50")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -6600,15 +6600,15 @@
 			(pintype "passive")
 			(uuid "1e7ad18a-b724-4432-8fdd-63a2891bfd49")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -6888,15 +6888,15 @@
 			(pintype "passive")
 			(uuid "da5723ae-c9cc-4a88-ab78-bb5651947a36")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -7391,15 +7391,15 @@
 			(pintype "passive")
 			(uuid "b0048714-79bd-4d32-a2f8-0a954d64b1c0")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -7894,15 +7894,15 @@
 			(pintype "passive")
 			(uuid "e03e36de-76a1-4d57-9bc6-81a2fa524ac3")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -8409,12 +8409,12 @@
 			(pintype "passive+no_connect")
 			(uuid "ea58f4f5-fc43-4bdd-a1c4-d2ccfb4c47fd")
 		)
-		(model "${KIPRJMOD}/3dmodels/Same_Sky_PTN15-F100HB20-H.step"
+		(model "${KIPRJMOD}/3dmodels/Trim_Potentiometer_103.step"
 			(offset
-				(xyz 2.75 -4 7)
+				(xyz 2.5 -2.75 4.5)
 			)
 			(scale
-				(xyz 0.45 0.4 1)
+				(xyz 1 0.9 1)
 			)
 			(rotate
 				(xyz 0 0 180)
@@ -9612,15 +9612,15 @@
 			(pintype "passive")
 			(uuid "296df740-1002-4b0b-b9b0-5e05d7e7ee93")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -10330,15 +10330,15 @@
 			(pintype "passive")
 			(uuid "807b0ef8-2e74-4ba3-a1c5-681cbd70d34d")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -11048,15 +11048,15 @@
 			(pintype "passive")
 			(uuid "29f2eb18-d27a-45d3-9b0d-b05c23822b1f")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -11981,15 +11981,15 @@
 			(pintype "passive")
 			(uuid "bdcc2d96-e3cc-435e-a913-59672efe7be3")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -12484,15 +12484,15 @@
 			(pintype "passive")
 			(uuid "6bd0ad7f-bd90-4832-acc5-cc91b18a2a05")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -12987,15 +12987,15 @@
 			(pintype "passive")
 			(uuid "ec28309c-5012-43e1-989a-edb39a744df5")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -13705,15 +13705,15 @@
 			(pintype "passive")
 			(uuid "a6d1ad27-d9dc-4979-ac73-1498cfb90c4e")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Red 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -180)
 			)
 		)
 	)
@@ -13993,15 +13993,15 @@
 			(pintype "passive")
 			(uuid "ba4568b2-f124-4776-9d36-968cd9ad08f9")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -14281,15 +14281,15 @@
 			(pintype "passive")
 			(uuid "43d08fda-1f58-4355-b3e7-eaf6277278a8")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Green 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -14925,15 +14925,15 @@
 			(pintype "passive")
 			(uuid "074bc6c4-4c85-4d5d-b380-64a6abe804dc")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(model "${KIPRJMOD}/3dmodels/LED 3mm Blue 3mm Leads.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 180)
 			)
 		)
 	)
