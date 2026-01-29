@@ -22,7 +22,7 @@ Powered by NE555, CD4017, and a speed control potentiometer
 
 | Name | GitHub | Role | Contact | Contributions |
 | --- | --- | --- | --- | --- |
-| **[Daniel Sichler aka Darexsh](https://github.com/Darexsh)** | [Link](https://github.com/Darexsh?tab=repositories) | Hardware & Schematic 🖥️🛠️| 📧 [E-Mail](mailto:sichler.daniel@gmail.com) | Concept, Layout, Integration |
+| **[Darexsh by Daniel Sichler](https://github.com/Darexsh)** | [Link](https://github.com/Darexsh?tab=repositories) | Hardware & Schematic 🖥️🛠️| 📧 [E-Mail](mailto:sichler.daniel@gmail.com) | Concept, Layout, Integration |
 
 * * *
 
