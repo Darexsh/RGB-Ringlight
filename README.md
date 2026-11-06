@@ -10,7 +10,7 @@
 Powered by NE555, CD4017, and a speed control potentiometer
 
 
-![Projekt-Status](https://img.shields.io/badge/Status-Aktiv-brightgreen) ![License](https://img.shields.io/badge/License-NonCommercial-blue) ![Version](https://img.shields.io/badge/Version-1.0-orange)
+![Projekt-Status](https://img.shields.io/badge/Status-Aktiv-brightgreen) ![License](https://img.shields.io/badge/MIT-blue) ![Version](https://img.shields.io/badge/Version-1.0-orange)
 
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-2AABEE?logo=telegram&logoColor=white)](https://t.me/darexsh_bot) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-yellow?logo=buy-me-a-coffee)](https://buymeacoffee.com/darexsh)  
 <sub>Check out my bot in Telegram for an easy project overview.<br>If you want to support more projects, you can leave a small donation for a coffee.</sub>
@@ -87,16 +87,19 @@ The ring contains **24 LEDs** total:
 
 * * *
 
-📜 License
-----------
+## 📜 License
 
-This project is licensed under the **Non-Commercial Software License (MIT-style) v1.0** and was developed as an educational project. You are free to use, modify, and distribute the code for **non-commercial purposes only**, and must credit the author:
+This project is licensed under the **MIT License**.
 
-**Copyright (c) 2025 Darexsh by Daniel Sichler**
+This license applies to the updater application code in this repository. Upstream patch and app projects remain under their own licenses and notice terms.
 
-Please include the following notice with any use or distribution:
+**Copyright (c) 2026 Darexsh by Daniel Sichler**
 
-> Developed by Daniel Sichler aka Darexsh. Licensed under the Non-Commercial Software License (MIT-style) v1.0. See `LICENSE` for details.
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell this software under the terms of the MIT License.
+
+When redistributing this project, you must include the original copyright notice and the MIT License permission notice.
+
+**Developer:** Darexsh by Daniel Sichler.
 
 The full license is available in the [LICENSE](LICENSE) file.
 
